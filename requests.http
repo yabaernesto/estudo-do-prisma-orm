@@ -1,0 +1,48 @@
+### Users
+POST http://localhost:3333/users
+Content-Type: application/json
+
+{
+  "name": "Ernesto",
+  "email": "ernesto@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/users
+
+###
+
+GET http://localhost:3333/users/afe5089e-d630-46a5-bd1f-62653ebf0cdb
+
+### Questions
+POST http://localhost:3333/questions
+Content-Type: application/json
+
+{
+  "title": "Node.js",
+  "content": "Como manipular arquivos no Node.js?",
+  "userId": "44bfdf97-b404-4e51-8dd4-e2e21f5db0ba"
+}
+
+###
+
+GET http://localhost:3333/questions
+
+### consulta
+
+GET http://localhost:3333/questions?title=prisma
+
+###
+
+PUT http://localhost:3333/questions/4d799703-58c0-401d-b9d7-c23015f2f548
+Content-Type: application/json
+
+{
+  "title": "PrismaORM",
+  "content": "Como manipular arquivos no Node.js?"
+}
+
+###
+
+DELETE http://localhost:3333/questions/4ec72f53-45bc-46ee-b6cb-4be76ced7aa9
